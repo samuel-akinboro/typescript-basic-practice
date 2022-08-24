@@ -21,3 +21,6 @@ isLoggedIn = true;
 var authors = []; // array that can only accept string values
 var mixed = []; // array that accepts only string and number values
 var uid;
+// objects
+var userOne = { name: 'book' };
+var users;
