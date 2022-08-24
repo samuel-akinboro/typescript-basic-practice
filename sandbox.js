@@ -16,3 +16,8 @@ var food;
 var isLoggedIn;
 food = 'Pudding';
 isLoggedIn = true;
+// union types (mixed values)
+// array
+var authors = []; // array that can only accept string values
+var mixed = []; // array that accepts only string and number values
+var uid;

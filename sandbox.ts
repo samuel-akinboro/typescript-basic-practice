@@ -21,3 +21,9 @@ let isLoggedIn: boolean
 
 food = 'Pudding'
 isLoggedIn = true
+
+// union types (mixed values)
+// array
+let authors: string[] = [] // array that can only accept string values
+let mixed: (string|number)[] = [] // array that accepts only string and number values
+let uid: string|number
