@@ -14,3 +14,10 @@ const arr = ['aron', 2];
 /*
 arr.push({}) Argument of type '{}' is not assignable to parameter of type 'string | number'.
 */
+
+// explicit types
+let food: string;
+let isLoggedIn: boolean
+
+food = 'Pudding'
+isLoggedIn = true

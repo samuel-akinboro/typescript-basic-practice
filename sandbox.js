@@ -10,4 +10,9 @@ multiply(10);
 var arr = ['aron', 2];
 /*
 arr.push({}) Argument of type '{}' is not assignable to parameter of type 'string | number'.
-*/ 
+*/
+// explicit types
+var food;
+var isLoggedIn;
+food = 'Pudding';
+isLoggedIn = true;
