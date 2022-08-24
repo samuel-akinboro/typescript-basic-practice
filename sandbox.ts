@@ -7,3 +7,10 @@ let character = 'ben';
 // declaring the data type of a parameter in functions
 
 const multiply = (val: number) => val * Math.PI
+multiply(10);
+
+// array practice
+const arr = ['aron', 2];
+/*
+arr.push({}) Argument of type '{}' is not assignable to parameter of type 'string | number'.
+*/
