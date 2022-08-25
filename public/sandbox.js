@@ -1,31 +1,32 @@
-var character = 'ben';
+"use strict";
+let character = 'ben';
 /*
   re-assigning a new value to the variable character
   that is not a type of string will throw an error
 */
 // declaring the data type of a parameter in functions
-var multiply = function (val) { return val * Math.PI; };
+const multiply = (val) => val * Math.PI;
 multiply(10);
 // array practice
-var arr = ['aron', 2];
+const arr = ['aron', 2];
 /*
 arr.push({}) Argument of type '{}' is not assignable to parameter of type 'string | number'.
 */
 // explicit types
-var food;
-var isLoggedIn;
+let food;
+let isLoggedIn;
 food = 'Pudding';
 isLoggedIn = true;
 // union types (mixed values)
 // array
-var authors = []; // array that can only accept string values
-var mixed = []; // array that accepts only string and number values
-var uid;
+let authors = []; // array that can only accept string values
+let mixed = []; // array that accepts only string and number values
+let uid;
 // objects
-var userOne = { name: 'book' };
-var users;
+let userOne = { name: 'book' };
+let users;
 // dynamic (any) types
-var value;
+let value;
 value = 'name';
 value = 17;
-var details = [];
+let details = [];
