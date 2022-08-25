@@ -35,3 +35,10 @@ let users: {
   name: string,
   age: number
 }
+
+// dynamic (any) types
+let value: any;
+value = 'name'
+value = 17
+
+let details: any[] = []

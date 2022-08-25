@@ -24,3 +24,8 @@ var uid;
 // objects
 var userOne = { name: 'book' };
 var users;
+// dynamic (any) types
+var value;
+value = 'name';
+value = 17;
+var details = [];
