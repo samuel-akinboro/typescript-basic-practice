@@ -30,3 +30,9 @@ let value;
 value = 'name';
 value = 17;
 let details = [];
+// functions
+let divide;
+const add = (a, b, c) => {
+    return a + b;
+};
+console.log(add(1, 2));

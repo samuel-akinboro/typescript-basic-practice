@@ -42,3 +42,12 @@ value = 'name'
 value = 17
 
 let details: any[] = []
+
+// functions
+let divide: Function;
+
+const add = (a: number, b: number, c?: number | string):number => {
+  return a + b
+}
+
+console.log(add(1, 2)) 
