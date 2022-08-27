@@ -36,3 +36,6 @@ const add = (a, b, c) => {
     return a + b;
 };
 console.log(add(1, 2));
+function userDetails(user) {
+    console.log(user.name);
+}

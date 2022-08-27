@@ -51,3 +51,11 @@ const add = (a: number, b: number, c?: number | string):number => {
 }
 
 console.log(add(1, 2)) 
+
+// type aliases
+type stringOrNum = string | number
+type objWithName = {name: string, id: stringOrNum}
+
+function userDetails (user: objWithName) {
+  console.log(user.name)
+}
