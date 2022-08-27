@@ -59,3 +59,11 @@ type objWithName = {name: string, id: stringOrNum}
 function userDetails (user: objWithName) {
   console.log(user.name)
 }
+
+
+// function signatures
+let getDetails: (n: string, o: string) => void
+
+getDetails = (name: string, address: string) => {
+  console.log(`${name} lives at ${address}`)
+}

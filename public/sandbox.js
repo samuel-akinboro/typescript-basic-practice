@@ -39,3 +39,8 @@ console.log(add(1, 2));
 function userDetails(user) {
     console.log(user.name);
 }
+// function signatures
+let getDetails;
+getDetails = (name, address) => {
+    console.log(`${name} lives at ${address}`);
+};
