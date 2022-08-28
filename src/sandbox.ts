@@ -41,7 +41,7 @@ let value: any;
 value = 'name'
 value = 17
 
-let details: any[] = []
+// let details: any[] = []
 
 // functions
 let divide: Function;

@@ -29,7 +29,7 @@ let users;
 let value;
 value = 'name';
 value = 17;
-let details = [];
+// let details: any[] = []
 // functions
 let divide;
 const add = (a, b, c) => {
