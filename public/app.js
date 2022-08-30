@@ -7,7 +7,7 @@ invoices.push(invOne);
 console.log(invOne.format());
 // DOM
 const form = document.querySelector('.new-item-form');
-// inputs
+// inputs (type assertion)
 const type = document.querySelector('#type');
 const toFrom = document.querySelector('#tofrom');
 const details = document.querySelector('#details');

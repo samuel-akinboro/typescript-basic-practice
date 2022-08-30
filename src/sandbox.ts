@@ -67,3 +67,26 @@ let getDetails: (n: string, o: string) => void
 getDetails = (name: string, address: string) => {
   console.log(`${name} lives at ${address}`)
 }
+
+// type literals
+
+// function parameter that only accepts specific values
+
+const drive = (s: string, direction: 'up' | 'down') => {
+  console.log(s, direction)
+}
+
+drive('sam', 'up')
+
+function compare(a: string, b: string): -1 | 0 | 1 {
+  return a === b ? 0 : a > b ? 1 : -1;
+}
+
+interface Options {
+  width: number;
+}
+function configure(x: Options | "auto") {
+  // ...
+}
+configure({ width: 100 });
+configure("auto");

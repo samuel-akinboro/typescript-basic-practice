@@ -44,3 +44,17 @@ let getDetails;
 getDetails = (name, address) => {
     console.log(`${name} lives at ${address}`);
 };
+// type literals
+// function parameter that only accepts specific values
+const drive = (s, direction) => {
+    console.log(s, direction);
+};
+drive('sam', 'up');
+function compare(a, b) {
+    return a === b ? 0 : a > b ? 1 : -1;
+}
+function configure(x) {
+    // ...
+}
+configure({ width: 100 });
+configure("auto");
