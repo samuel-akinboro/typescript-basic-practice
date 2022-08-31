@@ -58,3 +58,20 @@ function configure(x) {
 }
 configure({ width: 100 });
 configure("auto");
+// narrowing
+// the process of refining types to more specific types than declared is called narrowing
+const padLeft = (padding, input) => {
+    if (typeof padding === "number") {
+        return " ".repeat(padding) + input;
+    }
+    return padding + input;
+};
+const getArea = (shape) => {
+    if (shape.kind === 'circle') {
+        return Math.PI * shape.radius ** 2;
+    }
+    else {
+        return shape.sideLength ** 2;
+    }
+};
+console.log(getArea({ kind: 'circle', radius: 10 }));

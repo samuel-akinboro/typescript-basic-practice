@@ -90,3 +90,40 @@ function configure(x: Options | "auto") {
 }
 configure({ width: 100 });
 configure("auto");
+
+// narrowing
+// the process of refining types to more specific types than declared is called narrowing
+
+const padLeft = (padding: number | string, input: string):string => {
+  if(typeof padding === "number") {
+    return " ".repeat(padding) + input
+  }
+
+  return padding + input
+}
+
+// discriminated unions
+
+interface Circle {
+  kind: 'circle',
+  radius: number
+}
+
+interface Square {
+  kind: 'square',
+  sideLength: number
+}
+
+type Shape = Circle | Square
+
+const getArea = (shape: Shape):number => {
+  if(shape.kind === 'circle'){
+    return Math.PI * shape.radius ** 2
+  }
+  else{
+    return shape.sideLength ** 2
+  }
+}
+
+console.log(getArea({kind: 'circle', radius: 10}))
+
